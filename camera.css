@@ -1,0 +1,123 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Patrick Hand', cursive;
+    background:linear-gradient(to bottom,#fff6f8,#ffeef3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Main Card */
+.container{
+    width:90%;
+    max-width:900px;
+    background:#fff;
+    border-radius:25px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    animation:fadeIn 1s ease;
+}
+
+/* Heading */
+h1{
+    color:#c94d4d;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#8b5e5e;
+    font-size:2rem;
+    font-weight:normal;
+    margin-bottom:35px;
+}
+
+/* Camera */
+.camera-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+#camera{
+    width:260px;
+    animation:float 3s ease-in-out infinite;
+    transition:.3s;
+}
+
+#camera:hover{
+    transform:scale(1.05);
+}
+
+/* Button */
+#pictureBtn{
+    background:linear-gradient(to right,#ffb6c1,#ff8fb3);
+    color:#c0392b;
+    border:none;
+    padding:14px 35px;
+    border-radius:40px;
+    font-size:1.5rem;
+    font-family:'Patrick Hand', cursive;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#pictureBtn:hover{
+    transform:scale(1.08);
+    box-shadow:0 8px 20px rgba(255,105,180,.35);
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:scale(.95);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    #camera{
+        width:180px;
+    }
+
+    #pictureBtn{
+        font-size:1.2rem;
+        padding:12px 28px;
+    }
+}

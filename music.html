@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Song ❤️</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#fff8f8;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    color:#d85a7f;
+    margin-bottom:20px;
+}
+
+iframe{
+    width:900px;
+    max-width:90vw;
+    height:500px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.back-btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#ff7aa2;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.next-btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#ff7aa2;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Our Song ❤️</h1>
+
+    <iframe
+         width="900" height="500"
+        src="https://www.youtube.com/embed/6xKWiCMKKJg"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+
+    <br>
+
+    <button class="back-btn" onclick="history.back()">⬅ Back</button>
+    <button class="next-btn" onclick="window.location.href='final.html'">
+        Next ❤️</button>
+</div>
+
+</body>
+</html>

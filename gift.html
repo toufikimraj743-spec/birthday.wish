@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Gift</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="gift.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+    <div class="container">
+
+        <!-- Snoopy Left -->
+        <img src="images/dogmicro11.png" class="snoopy left" alt="Snoopy Left">
+
+        <!-- Snoopy Right -->
+        <img src="images/dogmicro24k.png" class="snoopy right" alt="Snoopy Right">
+
+        <!-- Heading -->
+        <h1 class="title">These are for you!</h1>
+
+        <p class="subtitle">Choose one to open</p>
+
+        <!-- Gift Section -->
+        <div class="gift-container">
+
+            <!-- Camera -->
+            <div class="gift" onclick="openCamera()">
+                <img src="images/camera1.jpg" alt="Camera">
+            </div>
+
+            <!-- Bottle -->
+            <div class="gift" onclick="openBottle()">
+                <img src="images/bottle.jpg" alt="Bottle">
+            </div>
+
+            <!-- Star -->
+            <div class="gift" onclick="openStar()">
+                <img src="images/star.jpg" alt="Star">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="gift.js"></script>
+
+</body>
+</html>

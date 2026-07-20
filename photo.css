@@ -1,0 +1,181 @@
+/* ===========================
+   RESET
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Patrick Hand', cursive;
+    background:linear-gradient(to bottom,#fff6f8,#ffeef3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* ===========================
+   MAIN CONTAINER
+=========================== */
+
+.container{
+    width:90%;
+    max-width:950px;
+    background:#fff;
+    border-radius:25px;
+    padding:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   LEFT TEXT
+=========================== */
+
+.left-text{
+    width:30%;
+}
+
+.left-text h1{
+    color:#d14c4c;
+    font-size:3rem;
+    line-height:1.2;
+}
+
+/* ===========================
+   CAMERA SECTION
+=========================== */
+
+.camera-area{
+    width:40%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Camera */
+
+#camera{
+    width:230px;
+    position:relative;
+    z-index:2;
+}
+
+/* Photo */
+
+#photo{
+    position:absolute;
+    width:170px;
+    height: 220px;
+    object-fit:cover;
+    border:8px solid white;
+    border-bottom:35px solid white;
+    border-radius:4px;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+    left:50%;
+    transform:translateX(-50%);
+    bottom:120px;
+
+    animation:photoPop 2s ease forwards;
+    z-index:1;
+}
+
+/* ===========================
+   NEXT BUTTON
+=========================== */
+
+.right-btn{
+    width:30%;
+    display:flex;
+    justify-content:center;
+}
+
+#nextBtn{
+    background:linear-gradient(to right,#ffb6c1,#ff8fab);
+    color:#c0392b;
+    border:none;
+    padding:14px 34px;
+    border-radius:40px;
+    font-size:1.4rem;
+    font-family:'Patrick Hand', cursive;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#nextBtn:hover{
+    transform:scale(1.08);
+    box-shadow:0 8px 18px rgba(255,105,180,.35);
+}
+
+/* ===========================
+   PHOTO ANIMATION
+=========================== */
+
+@keyframes photoPop{
+
+    from{
+        bottom:80px;
+        opacity:0;
+    }
+
+    to{
+        bottom:230px;
+        opacity:1;
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+        gap:30px;
+        text-align:center;
+        padding:25px;
+    }
+
+    .left-text,
+    .camera-area,
+    .right-btn{
+        width:100%;
+    }
+
+    .left-text h1{
+        font-size:2.2rem;
+    }
+
+    #camera{
+        width:210px;
+    }
+
+    #photo{
+        width:130px;
+        bottom:50px;
+    }
+
+    @keyframes photoPop{
+
+        0%{
+            bottom:50px;
+            opacity:0;
+        }
+
+        100%{
+            bottom:150px;
+            opacity:1;
+        }
+
+    }
+
+}
