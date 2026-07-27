@@ -20,7 +20,7 @@ blowBtn.addEventListener("click", () => {
     setTimeout(() => {
         cake.src = "images/candle44.png";
 
-        title.innerHTML = "Happy Birthday My Love ❤️";
+        title.innerHTML = "Happy Birthday Dear ❤️";
         blowBtn.style.display = "none";
     }, 400);
 
